@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.However, when running in Docker, the app will be available on http://localhost:7775.
 
 The page will reload when you make changes.  
 You may also see any lint errors in the console.
@@ -48,3 +48,15 @@ To run this React app using Docker, follow these steps:
 
    ```bash
    docker build -t gabani_archie_coding_assignment11 .
+
+2. **Run the Docker Container**:
+   To run the container and view the app:
+   docker run -p 7775:3000 gabani_archie_coding_assignment11
+
+3. **View the App**:
+   Open your browser and go to http://localhost:7775.
+
+4. **Cloning the Repository and Running locally**
+   If you want to clone this project from GitHub and run it locally:
+   git clone https://github.com/archiegabani/docker-react-assifnment.git
+   cd docker-react-assignment
